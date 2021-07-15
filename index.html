@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <title>homework-RWD</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row py-2 align-items-center justify-content-between">
+
+                <div class="hum d-bloc d-lg-none"><a href="#"><img src="./images/m-menu-normal.png" alt=""></a></div>
+
+                <div class="gold-logo-App d-flex align-items-end ">
+                    <div class="gold-logo d-none d-lg-block">
+                        <a href="#"><img src="./images/logo_bw100.png" alt=""></a>
+                    </div>
+                    <div class="App ml-3  d-none d-lg-block"><a href="#">下載APP抽好禮</a></div>
+                </div>
+                <div class="logo">
+                    <a href="#"><img class="" src="./images/logo-red.png" alt=""></a>
+                </div>
+                <div class="login d-flex align-self-end">
+                    <div class="search">
+                        <svg class="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="32px" height="32px" viewBox="0 0 32 32" version="1.1"
+                            data-src="https://ibw.bwnet.com.tw/file/img/search-normal.svg">
+                            <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+                            <title>share/btn/icon/search_normal</title>
+                            <desc>Created with Sketch.</desc>
+                            <g id="share/btn/icon/search_normal" stroke="none" stroke-width="1" fill="none"
+                                fill-rule="evenodd">
+                                <g transform="translate(6.000000, 6.000000)" fill="#CD0505" id="Combined-Shape">
+                                    <path
+                                        d="M14.3139491,13.6107993 C14.3276199,13.6218544 14.3408437,13.6337369 14.3535534,13.6464466 L19.3033009,18.5961941 C19.498563,18.7914562 19.498563,19.1080387 19.3033009,19.3033009 C19.1080387,19.498563 18.7914562,19.498563 18.5961941,19.3033009 L13.6464466,14.3535534 C13.6207699,14.3278767 13.5984696,14.3001021 13.5795458,14.2707814 C12.2148941,15.3534069 10.4886618,16 8.61140951,16 C4.19313151,16 0.611409505,12.418278 0.611409505,8 C0.611409505,3.581722 4.19313151,0 8.61140951,0 C13.0296875,0 16.6114095,3.581722 16.6114095,8 C16.6114095,10.185807 15.7347935,12.1668693 14.3139491,13.6107993 Z M8.61140951,15 C12.4774028,15 15.6114095,11.8659932 15.6114095,8 C15.6114095,4.13400675 12.4774028,1 8.61140951,1 C4.74541626,1 1.61140951,4.13400675 1.61140951,8 C1.61140951,11.8659932 4.74541626,15 8.61140951,15 Z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="sign-in px-1">登入</div>
+                    <span class=" px-1">/</span>
+                    <div class="sign-out px-1">註冊</div>
+                    <div class="anniversary ml-3 p-1 d-none d-lg-block">週年慶速搶</div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <nav class="d-none d-lg-block">
+        <div class="container">
+            <div class="row">
+                <ul class="d-flex justify-content-between w-100 text-center">
+                    <li><a href="#">焦點</a></li>
+                    <li><a href="#">國際</a></li>
+                    <li><a href="#">財經</a></li>
+                    <li><a href="#">管理</a></li>
+                    <li><a href="#">職場</a></li>
+                    <li><a href="#">共好ESG</a></li>
+                    <li><a href="#">專題</a></li>
+                    <li><a href="#">數位閱讀</a></li>
+                    <li><a href="#">商周Store</a></li>
+                    <li><a href="#">CEO學院</a></li>
+                    <li><a href="#">服務</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="announcement d-flex align-items-center py-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+                data-src="https://ibw.bwnet.com.tw/file/img/post.svg">
+                <g fill="none" fill-rule="evenodd">
+                    <path d="M0 0h32v32H0z"></path>
+                    <path fill="#252525" fill-rule="nonzero"
+                        d="M14.819 22.905a1.055 1.055 0 0 1-1.304.315c-2.95-1.44-2.823-1.105-2.857-2.77l-1.66-.79c.029 1.38-.2 3.125 1.572 3.99 2.369 1.155 2.613 1.355 3.39 1.355 1.513 0 2.153-1.075 2.646-1.725l-1.528-.725-.26.35zM21.519 6c-1.01 0-1.953.585-2.744 1.585L6.707 13.41c-.943 1.09-.943 3.26 0 4.35l12.068 5.825c.786 1 1.728 1.585 2.744 1.585 2.76 0 4.991-4.29 4.991-9.585C26.51 10.29 24.28 6 21.52 6zm-4.688 6.345l-8.234 2.73a.529.529 0 0 1-.674-.355.558.558 0 0 1 .288-.67l9.391-4.38c-.332.8-.59 1.7-.771 2.675zm4.688 11.105c-1.528 0-3.31-3.435-3.31-7.865s1.777-7.865 3.31-7.865c1.529 0 3.311 3.435 3.311 7.865s-1.777 7.865-3.31 7.865zm-2.134-10.345a.585.585 0 0 0-.093.01 7.843 7.843 0 0 0-.361 2.145c-.005.1-.005.2-.005.305 0 .93.147 1.79.396 2.495.02 0 .039.005.063.005 1.338 0 2.422-1.11 2.422-2.48 0-1.37-1.084-2.48-2.422-2.48z">
+                    </path>
+                </g>
+            </svg>
+            <p>【商業周刊 ╴商品/贈品暫停出貨公告】</p>
+        </div>
+    </div>
+
+    <div class="banner">
+        <div class="container">
+            <div class="row">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./images/focus.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/Snipaste_2021-07-15_17-13-06.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/Snipaste_2021-07-15_17-13-34.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="arcitle">
+        <div class="container">
+            <div class="row">
+                <div class="new col-12 col-lg-7 col-12">
+                    <h3 class="new-title">
+                        <!-- 左上右上突出邊框 -->
+                        <span class="cross-boder">
+                            <div class="extra"></div>
+                            <div class="extra-h"></div>
+                            <span>最新文章</span>
+                        </span>
+                    </h3>
+                    <div class="item-group">
+                        <div class="item">
+                            <div class="pic d-none d-lg-block">
+                                <a href="#">
+                                    <img src="./images/4e73da35-2a1b-9e71-e9f6-300e3b59cd43_250.jpeg" alt="">
+                                </a>
+                            </div>
+                            <div class="text">
+                                <p>財經</p>
+                                <h4><a href="#">莫德納能抗Delta病毒，股價聞訊漲逾5%…創辦人為什麼卻是打輝瑞疫苗？</a></h4>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="pic d-none d-lg-block">
+                                <a href="#">
+                                    <img src="./images/0344c1c5-77a8-7708-35eb-59941991643c_250.jpeg" alt="">
+                                </a>
+                            </div>
+                            <div class="text">
+                                <p>焦點</p>
+                                <h4><a href="#">7月新制攸關荷包 沒跟到虧大了！10大重點看這裡</a></h4>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="pic d-none d-lg-block">
+                                <a href="#">
+                                    <img src="./images/cf264da8-faee-2a1e-169d-51bb740448eb_250.jpeg" alt="">
+                                </a>
+                            </div>
+                            <div class="text">
+                                <p>商業周刊第 1755 期</p>
+                                <h4><a href="#">女機師載莫德納回台　39天回不了家的豁達告白</a></h4>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="pic d-none d-lg-block">
+                                <a href="#">
+                                    <img src="./images/fdf0ffd4-7b15-c52e-e6f1-9758d52fe95e_250.jpeg" alt="">
+                                </a>
+                            </div>
+                            <div class="text">
+                                <p>Sponsor商業周刊</p>
+                                <h4><a href="#">和泰產險挾科技之力創新 讓產險體驗友善便利</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="read-more">閱讀更多</a>
+                </div>
+
+
+                <div class="popular col-12 col-lg-5 py-4 col-12">
+                    <h3 class="popular-title">
+                        <!-- 左上右上突出邊框 -->
+                        <span class="cross-boder">
+                            <div class="extra"></div>
+                            <div class="extra-h"></div>
+                            <span>大家都在看</span>
+                        </span>
+                    </h3>
+                    <div class="item-group">
+                        <div class="item d-flex">
+                            <p>1</p>
+                            <h4><a href="#">被稱讚「漂亮」時，回答「你也是」是不夠的！訪問過5千位來賓的日本電台主持人，教你加倍奉還讚美法</a></h4>
+                        </div>
+                        <div class="item d-flex">
+                            <p>2</p>
+                            <h4><a href="#">女機師載莫德納回台　39天回不了家的豁達告白</a></h4>
+                        </div>
+                        <div class="item d-flex">
+                            <p>4</p>
+                            <h4><a href="#">內捲中國關鍵報告》中共百年、歐美圍堵，看懂中國經濟「往內轉」4大危機</a></h4>
+                        </div>
+                        <div class="item d-flex">
+                            <p>5</p>
+                            <h4><a href="#">習近平宣布實現第一百年目標：只有社會主義才能救中國</a></h4>
+                        </div>
+                        <div class="item d-flex">
+                            <p>6</p>
+                            <h4><a href="#">疫苗殘劑預約懶人包》如何預約？誰可以打？各縣市規定看這裡</a></h4>
+                        </div>
+                        <div class="item d-flex">
+                            <p>7</p>
+                            <h4><a href="#">好好說話》嗯嗯、收到！交辦工作這樣回，為何恐讓好感度「失分」？</a></h4>
+                        </div>
+                        <div class="item d-flex">
+                            <p>8</p>
+                            <h4><a href="#">7月新制攸關荷包 沒跟到虧大了！10大重點看這裡</a></h4>
+                        </div>
+                    </div>
+                    <a href="#" class="read-more">閱讀更多</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="maybeLike w-100">
+                <h3 class="maybeLike-title d-flex justify-content-between w-100">
+                    <!-- 左上右上突出邊框 -->
+                    <span class="cross-boder">
+                        <div class="extra"></div>
+                        <div class="extra-h"></div>
+                        <span>你可能有興趣</span>
+                    </span>
+                    <div class="change-btn"><a href="#">換一批</a></div>
+                </h3>
+                <div class="item-group d-flex flex-column d-lg-flex flex-lg-row justify-content-lg-between">
+                    <div class="item">
+                        <a href="#" class="pic">
+                            <img src="./images/4228f606-a852-b8bd-a183-c55029b057d9_250.jpg" alt="">
+                        </a>
+                        <p>
+                            <a href="#">Delta入侵台灣！病毒「傳染性」、人體「免疫力」英文怎麼說？</a>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="pic">
+                            <img src="./images/5a3a1fda-46f5-5d25-6453-b744669e6726_250.jpeg" alt="">
+                        </a>
+                        <p>
+                            <a href="#">增55例》屏東群聚再增一例！台積電急尋門路買疫苗，美商務部長：有請求協助</a>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="pic">
+                            <img src="./images/9c24b90e-9dc6-4193-9eae-2fed5e024e27_250.jpg" alt="">
+                        </a>
+                        <p>
+                            <a href="#">一個「自動貓砂盆」要價破萬，貓奴會買嗎？智慧寵物裝置為什麼這麼昂貴</a>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="pic">
+                            <img src="./images/56410ecb-2152-db9e-ac8e-0bc540377443_250.png" alt="">
+                        </a>
+                        <p>
+                            <a href="#">Delta病毒株進入社區！已驗出12例確診者　嚴施5措施</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+
+    <div class="container">
+        <div class="row">
+
+            <div class="main">
+                <div class="category d-flex justify-content-lg-between">
+                    <div class="item">
+                        <h3 class=" d-flex justify-content-lg-between">
+                            <span>國際</span>
+                            <div>
+                                <a href="" class="more d-flex">
+                                    <span>更多</span>
+                                    <div class="btn-more">
+                                        <img src="./images/btn-more-normal.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </h3>
+
+                        <a href="#" class="pic">
+                            <img class="img-fluid" src="./images/cb294156-0820-43ad-eec3-fa805bac0206_620.jpeg" alt="">
+                        </a>
+                        <ul class="items-txt">
+                            <li class="first-text">
+                                <div class="first-content"><a href="#">一杯焦糖星冰樂外加13項需求！星巴克滿足「瘋狂客製」的背後</a></div>
+                            </li>
+                            <li>
+                                <div class="other-content"><a
+                                        href="#">人人在用的「驗證碼」，催生收入最高的教育app！Duolingo如何讓人天天準時報到學外語？</a></div>
+                            </li>
+                            <li>
+
+                                <div class="other-content">
+                                    <div class="Sponsor">Sponsor</div>
+                                    <a href="#">《疫情下重探人道醫療的關鍵抉擇》 臺灣人如何加入無國界醫生的國際人道救援行</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="other-content"><a href="#">習近平宣布實現第一百年目標：只有社會主義才能救中國</a></div>
+                            </li>
+                            <li>
+                                <div class="other-content"><a href="#">習近平：努力塑造「可愛形象」、捨棄戰狼外交，中國能夠一改國際汙名嗎？</a></div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="item">
+                        <h3 class=" d-flex justify-content-lg-between">
+                            <span>國際</span>
+                            <div>
+                                <a href="" class="more d-flex">
+                                    <span>更多</span>
+                                    <div class="btn-more">
+                                        <img src="./images/btn-more-normal.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </h3>
+
+                        <a href="#" class="pic">
+                            <img class="img-fluid" src="./images/cb294156-0820-43ad-eec3-fa805bac0206_620.jpeg" alt="">
+                        </a>
+                        <ul class="items-txt">
+                            <li class="first-text">
+                                <div class="first-content"><a href="#">一杯焦糖星冰樂外加13項需求！星巴克滿足「瘋狂客製」的背後</a></div>
+                            </li>
+                            <li>
+                                <div class="other-content"><a
+                                        href="#">人人在用的「驗證碼」，催生收入最高的教育app！Duolingo如何讓人天天準時報到學外語？</a></div>
+                            </li>
+                            <li>
+
+                                <div class="other-content">
+                                    <div class="Sponsor">Sponsor</div>
+                                    <a href="#">《疫情下重探人道醫療的關鍵抉擇》 臺灣人如何加入無國界醫生的國際人道救援行</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="other-content"><a href="#">習近平宣布實現第一百年目標：只有社會主義才能救中國</a></div>
+                            </li>
+                            <li>
+                                <div class="other-content"><a href="#">習近平：努力塑造「可愛形象」、捨棄戰狼外交，中國能夠一改國際汙名嗎？</a></div>
+                            </li>
+                        </ul>
+                    </div>
+
+
+
+
+                </div>
+                <div class="aside">
+                    132
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
