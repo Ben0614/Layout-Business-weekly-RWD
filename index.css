@@ -3,6 +3,7 @@
     padding:0;
     box-sizing: border-box;
     list-style: none;
+  font-family: 'Noto Sans TC', sans-serif;
 }
 
 dl, ol, ul,p {
@@ -65,7 +66,7 @@ header{
     height: 100%;
 }
 
-.login{
+.login a{
     color: #cd0505;
 }
 
@@ -75,6 +76,8 @@ header{
 
 .anniversary{
     background-color: #cd0505;
+}
+.anniversary a{
     color:#fff;
 }
 
@@ -86,12 +89,19 @@ nav ul li {
     width: 101px;
     padding: 10px 0;
 }
+nav ul li:hover {
+    background-color: rgba(0,0,0,.3) ;
+}
+nav ul li:hover a{
+    color: #fff ;
+}
 nav ul li a{
     text-align: center;
     color:#fff;
 }
 
-.new{
+.new
+{
     position: relative;
     background-color: #fff;
     padding: 40px 15px 80px 15px;
@@ -115,21 +125,6 @@ nav ul li a{
   border-bottom: 1px solid #ccc;
   padding-bottom:5px;
    position: relative
-}
-
-.maybeLike h3{
-  border-bottom: 1px solid #ccc;
-  position: relative;
-}
-
-.maybeLike h3::after{
-  content:'';
-  position: absolute;
-  bottom:-3px;
-  left:0;
-  right: 95%;
-  padding-bottom:7px;
-  border-bottom: 3px solid #000;
 }
 
 .new h3::after{
@@ -177,7 +172,7 @@ nav ul li a{
 
 .new .item .text h4 a{
     font-size: 20px;
-    font-weight: 500px;
+    font-weight: 500;
     color: #000;
 }
 .new .item .text p {
@@ -194,6 +189,7 @@ nav ul li a{
   padding: 5px 0;
   font-size: 20px;
   font-weight: 400;
+
 }
 
 /* 頂部兩點突出邊框 */
@@ -213,6 +209,11 @@ nav ul li a{
 .new .item .text{
     padding-left: 0;
 }
+.new{
+    padding: 40px 15px 50px 15px;
+    margin-bottom: 40px;
+}
+
 }
 
 .new .read-more{
@@ -227,6 +228,14 @@ nav ul li a{
     line-height: 44px;
     color:#ffff;
 }
+.new .read-more:hover
+{
+    background-color: rgba(0,0,0,.5);
+}
+
+.popular{
+    padding: 40px 15px 80px;
+}
 
 .popular .item{
     border-bottom: 1px solid #999;
@@ -239,11 +248,16 @@ nav ul li a{
     padding-left: 10px;
 }
 .popular .item h4 a{
+    font-weight: 400;
     font-size: 18px;
     color:#000;
 }
 .popular .item h4{
     padding-left: 20px;
+}
+
+.popular .read-more:hover{
+    background-color: rgba(255,255,255,.5);
 }
 
 .popular h3::after{
@@ -293,12 +307,12 @@ nav ul li a{
 
 @media (max-width: 991.98px) { 
     .popular{
-        margin-bottom: 90px;
+        margin-bottom: 70px;
     }
  .popular .read-more{
     position:absolute;
     width: 80%;
-    bottom: -40px;
+    bottom: 0px;
     background-color: #fff;
     height: 44px;
     text-align: center;
@@ -308,10 +322,23 @@ nav ul li a{
 }
  }
 
-
-
 .maybeLike-title {
     margin-bottom: 15px;
+}
+
+.maybeLike h3{
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+
+.maybeLike h3::after{
+  content:'';
+  position: absolute;
+  bottom:-3px;
+  left:0;
+  right: 95%;
+  padding-bottom:7px;
+  border-bottom: 3px solid #000;
 }
 
 .maybeLike-title .change-btn{
@@ -376,6 +403,10 @@ nav ul li a{
     padding-left: 10px;
 }
 
+.maybeLike h3::after{
+  right: 85%;
+}
+
  }
 /*  */
  .main{
@@ -383,12 +414,37 @@ nav ul li a{
  }
 /*  */
  .main .category{
-     width: calc(70% - 5px);
+     border-bottom: 1px solid #000;
+     padding-bottom: 40px;
+     margin-bottom: 100px;
+     width: calc(70% - 20px);
  }
 /*  */
  .main .aside{
-     width: calc(30% - 5px);
+     width: calc(25% - 20px);
  }
+
+ .main .category h3{
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+  font-size: 20px;
+  font-weight: 400;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+ }
+
+.main .category h3::after{
+  content:'';
+  position: absolute;
+  bottom:-3px;
+  left:0;
+  right: 85%;
+  padding-bottom:7px;
+  border-bottom: 3px solid #000;
+}
 
  .main .category .btn-more{
     width: 22px;
@@ -403,30 +459,34 @@ nav ul li a{
      width: calc(50% - 15px);
  }
 
- .category .more span{
+.main .category .more span{
      color: #cd0505;
-     font-size: 16px;
+     font-size: 14px;
  }
 
-.category .pic img{
+.main .category .pic img{
     margin-bottom: 15px;
 }
 
-.main .items-txt{
-    height: 100%;
+.main .category .item{
+    padding: 30px 0 20px 0;
 }
-
- .main .items-txt .first-text{
+ .main .item-txt .first-text{
+    height: 100px;
     border-bottom: 1px solid #ccc;
     font-size: 20px;
     padding-bottom: 15px;;
  }
- .main .items-txt .first-text a{
+ .main .item-txt .first-text a{
     color:#000;
     font-weight: 500;
  }
 
  .main .other-content{
+     /* 內容框寬與複層一樣 */
+    width: 100%;
+    /* 高定死 */
+    height: 100px;
     border-bottom: 1px solid #ccc;
     padding: 15px 0;
  }
@@ -442,7 +502,9 @@ nav ul li a{
  @media (max-width: 991.98px) { 
 
 .main{
-     width: 100%;
+    /* 讓aside垂直 */
+    flex-direction: column;
+    width: 100%;
  }
 
  .main .category{
@@ -450,11 +512,6 @@ nav ul li a{
      flex-direction: column;
      width: 100%;
      padding:0 15px;
- }
- .main .category h3{
-     display:flex;
-     justify-content:space-between;
-     align-items: center;
  }
 
  .main .category .item{
@@ -466,3 +523,252 @@ nav ul li a{
      width: 100%;
  }
 }
+
+.main .aside .aside-item{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0 20px 0;
+}
+
+.main .aside .aside-item .circle{
+    align-self: center;
+}
+
+.main .aside-item h3{
+  border-bottom: 1px solid #ccc;
+  position: relative;
+  font-size: 20px;
+  font-weight: 400;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+.main .aside-item h3::after{
+  content:'';
+  position: absolute;
+  bottom:-3px;
+  left:0;
+  right: 85%;
+  padding-bottom:7px;
+  border-bottom: 3px solid #000;
+}
+
+.main .aside-item .type{
+    color:#cd0505;
+}
+
+.aside-item a p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+@media (max-width: 991.98px) {
+    .main .category{
+     border-bottom: 0;
+     padding-bottom: 0;
+     margin-bottom: 0;
+ }
+
+    .main .aside{
+        margin-bottom: 50px;
+        padding: 0 15px;
+    }
+    .item-content{
+        display: flex ;
+        margin-bottom: 15px;
+    }
+
+    .item-content .top,
+    .item-content .book-pic,
+    .item-content .health-pic{
+        padding-right: 15px;
+        border-bottom: 0;
+    }
+
+    .author{
+        font-size: 14px;;
+    }
+ }
+
+ footer {
+     width: 100%;
+     background-color:#252525;
+     padding: 30px 0 15px 0;
+ }
+
+ .container .row{
+     display:flex;
+     /* flex-direction: column; */
+ }
+
+ .footer-logo{
+     padding-bottom: 20px;
+ }
+
+ .footer-content{
+     width: 100%;
+     display:flex;
+     justify-content:space-between
+ }
+ .footer-content .link{
+     display:flex;
+     width: calc(50% - 25px);
+     justify-content:space-between;
+     border-right: 1px solid #ccc;
+     padding-right: 50px;
+ }
+
+ .footer-content .link .item h4{
+     font-size:16px;
+ }
+
+ .footer-content .link .item a p{
+    font-size:14px;
+    padding: 3px 0;
+}
+ 
+.footer-content .link .item h4,
+.footer-content .link .item a p{
+    color:#ccc;
+}
+
+.information-contact{
+     width: calc(50% - 25px);
+}
+
+ .cooperation {
+     display:flex;
+     justify-content: space-between;
+ }
+
+ .social-network{
+     display:flex;
+ }
+
+ .pics{
+     display:flex;
+ }
+
+/* 因為icon被固定寬高，所以手機板會超出版面 */
+ .pics .pic{
+     width: 32px;
+     height: 32px;
+ }
+
+.pics .pic+.pic,
+ .app-download,
+ .follow{
+     margin-left: 25px;
+ }
+ 
+ .app-download a,
+ .follow a{
+    color: #ccc;
+ }
+/* 因為icon被固定寬高，所以手機板會超出版面 */
+ .pics .ig,
+ .pics .web{
+     width: 26px;
+     height: 26px;
+ }
+ .pics .ig img,
+ .pics .web img{
+     width: 100%;
+     height: 100%;
+ }
+
+ .pics .pic img{
+     width: 100%;
+     height: 100%;
+ }
+
+ .follow-area{
+     display:flex;
+ }
+
+ .phone {
+     display:flex;
+     color:#ccc;
+     justify-content: space-between;
+     text-align: center;
+ }
+
+ .phone h4{
+     font-size: 16px;
+ }
+ .phone p{
+     font-size: 14px;
+ }
+
+ .copyright{
+     width: 100%;
+     padding-top: 80px;
+     display:flex;
+     justify-content: space-between
+ }
+ .copyright .txt,
+ .copyright a p{
+     color:#ccc;
+     font-size: 14px;
+ }
+
+ @media (max-width: 991.98px) {
+     footer {
+        padding: 15px 15px;
+     }
+     .footer-logo{
+         margin:0 auto;
+     }
+     .information-contact,
+     .social-network{
+         justify-content:center;
+         width: 100%;
+     }
+
+
+ .follow-area{
+     width: 100%;
+     text-align: center;
+     margin-bottom: 25px;
+ }
+
+ .app-download,
+ .follow{
+     /* 平均分配寬 */
+     /* 可以自動對齊 */
+    margin-left: 0;
+    width: 50%;
+ }
+
+     .phone{
+         margin-bottom: 20px;
+     }
+     .tel,
+     .service{
+     /* 平均分配寬 */
+     /* 可以自動對齊 */
+         width: 50%;
+     }
+     .copyright div{
+         display:none
+     }
+     .copyright{
+        border-top:1px solid #ccc;
+        padding-top: 15px;
+        margin-top: 15px;
+         text-align:center
+     }
+
+.service-time{
+    text-align: center;
+    color:#ccc
+}
+.service-time h4{
+    font-size: 16px;
+}
+.service-time p{
+    font-size: 14px;
+}
+
+
+ }

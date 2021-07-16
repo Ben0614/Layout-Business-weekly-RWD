@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="index.css">
     <title>homework-RWD</title>
 </head>
@@ -45,10 +47,10 @@
                             </g>
                         </svg>
                     </div>
-                    <div class="sign-in px-1">登入</div>
+                    <div class="sign-in px-1"><a href="#">登入</a></div>
                     <span class=" px-1">/</span>
-                    <div class="sign-out px-1">註冊</div>
-                    <div class="anniversary ml-3 p-1 d-none d-lg-block">週年慶速搶</div>
+                    <div class="sign-out px-1"><a href="#">註冊</a></div>
+                    <div class="anniversary ml-3 p-1 d-none d-lg-block"><a href="#">週年慶速搶</a></div>
                 </div>
 
             </div>
@@ -180,7 +182,7 @@
                 </div>
 
 
-                <div class="popular col-12 col-lg-5 py-4 col-12">
+                <div class="popular col-12 col-lg-5 col-12">
                     <h3 class="popular-title">
                         <!-- 左上右上突出邊框 -->
                         <span class="cross-boder">
@@ -276,20 +278,18 @@
     </div>
 
 
-
-
-
     <div class="container">
         <div class="row">
 
-            <div class="main">
+            <div class="main d-flex justify-content-between">
                 <div class="category d-flex justify-content-lg-between flex-wrap">
                     <div class="item">
                         <h3 class=" d-flex justify-content-lg-between align-items-lg-end">
                             <span>焦點</span>
                             <div>
-                                <a href="" class="more d-flex ">
-                                    <span>更多</span>
+                                <a href="" class="more d-flex">
+                                    <!-- 讓字置中對齊 -->
+                                    <span class="align-self-center">更多</span>
                                     <div class="btn-more d-flex align-items-bottom">
                                         <img src="./images/btn-more-normal.png" alt="">
                                     </div>
@@ -301,7 +301,7 @@
                             <!-- img-fluid 圖片滿版 -->
                             <img class="img-fluid" src="./images/8b4f86be-1952-08e4-0207-14fbffc7d949_620.jpeg" alt="">
                         </a>
-                        <ul class="items-txt">
+                        <ul class="item-txt">
                             <li class="first-text">
                                 <div class="first-content"><a href="#">57例》今個案不含環南市場，陳時中：估至少有50人確診！示警簡訊範圍公布</a></div>
                             </li>
@@ -311,10 +311,12 @@
                                     </a></div>
                             </li>
                             <li>
-                                <div class="other-content d-flex"><a href="#">
-                                        <div class="Sponsor">Sponsor</div>
+                                <div class="other-content">
+                                    <div class="Sponsor">Sponsor</div>
+                                    <a href="#">
                                         「商業事件審理法」7月上路 司法妥適為臺灣商業競爭力加分
-                                    </a></div>
+                                    </a>
+                                </div>
                             </li>
                             <li>
                                 <div class="other-content"><a href="#">燃料池爆滿，核二1號機提前除役！異常高溫＋在家上班⋯會影響供電嗎？</a></div>
@@ -330,7 +332,7 @@
                             <span>國際</span>
                             <div>
                                 <a href="" class="more d-flex ">
-                                    <span>更多</span>
+                                    <span class="align-self-center">更多</span>
                                     <div class="btn-more d-flex align-items-bottom">
                                         <img src="./images/btn-more-normal.png" alt="">
                                     </div>
@@ -341,7 +343,7 @@
                         <a href="#" class="pic">
                             <img class="img-fluid" src="./images/cb294156-0820-43ad-eec3-fa805bac0206_620.jpeg" alt="">
                         </a>
-                        <ul class="items-txt">
+                        <ul class="item-txt">
                             <li class="first-text">
                                 <div class="first-content"><a href="#">一杯焦糖星冰樂外加13項需求！星巴克滿足「瘋狂客製」的背後</a></div>
                             </li>
@@ -371,7 +373,7 @@
                             </span>
                             <div>
                                 <a href="" class="more d-flex ">
-                                    <span>更多</span>
+                                    <span class="align-self-center">更多</span>
                                     <div class="btn-more d-flex align-items-bottom">
                                         <img src="./images/btn-more-normal.png" alt="">
                                     </div>
@@ -382,7 +384,7 @@
                         <a href="#" class="pic">
                             <img class="img-fluid" src="./images/7d5e2268-e3b2-0ef9-a152-c0992a9e64ac_620.jpeg" alt="">
                         </a>
-                        <ul class="items-txt">
+                        <ul class="item-txt">
                             <li class="first-text">
                                 <div class="first-content"><a href="#">台積電明年量產3奈米晶片，英特爾將擠下蘋果成最大客戶？</a></div>
                             </li>
@@ -413,7 +415,7 @@
                             <span>管理</span>
                             <div>
                                 <a href="" class="more d-flex ">
-                                    <span>更多</span>
+                                    <span class="align-self-center">更多</span>
                                     <div class="btn-more d-flex align-items-bottom">
                                         <img src="./images/btn-more-normal.png" alt="">
                                     </div>
@@ -424,7 +426,7 @@
                         <a href="#" class="pic">
                             <img class="img-fluid" src="./images/65cb3fb8-e8b0-d309-ea85-d43c025081eb_620.jpeg" alt="">
                         </a>
-                        <ul class="items-txt">
+                        <ul class="item-txt">
                             <li class="first-text">
                                 <div class="first-content"><a href="#">「台灣加油站要服務多少車輛？」上網找不到、大企業都愛問的古怪面試題，怎麼解？</a></div>
                             </li>
@@ -453,7 +455,7 @@
                             </span>
                             <div>
                                 <a href="" class="more d-flex ">
-                                    <span>更多</span>
+                                    <span class="align-self-center">更多</span>
                                     <div class="btn-more d-flex align-items-bottom">
                                         <img src="./images/btn-more-normal.png" alt="">
                                     </div>
@@ -464,7 +466,7 @@
                         <a href="#" class="pic">
                             <img class="img-fluid" src="./images/5c5c26e2-aead-e6ef-410d-160d71d5f118_620.jpeg" alt="">
                         </a>
-                        <ul class="items-txt">
+                        <ul class="item-txt">
                             <li class="first-text">
                                 <div class="first-content"><a href="#">打造你的「長勝心態」》起床後就很期待、想發揮影響的那件事，才是最重要的</a></div>
                             </li>
@@ -493,7 +495,7 @@
                             </span>
                             <div>
                                 <a href="" class="more d-flex ">
-                                    <span>更多</span>
+                                    <span class="align-self-center">更多</span>
                                     <div class="btn-more d-flex align-items-bottom">
                                         <img src="./images/btn-more-normal.png" alt="">
                                     </div>
@@ -504,7 +506,7 @@
                         <a href="#" class="pic">
                             <img class="img-fluid" src="./images/3822b2d7-20fe-472f-d2d2-15af8ace6074_620.jpeg" alt="">
                         </a>
-                        <ul class="items-txt">
+                        <ul class="item-txt">
                             <li class="first-text">
                                 <div class="first-content"><a href="#">有高血壓、洗腎患者，適合打疫苗嗎？該打哪種疫苗？各科醫師整理一篇看懂</a></div>
                             </li>
@@ -532,24 +534,345 @@
 
                 </div>
 
+
+                <div class="aside">
+                    <div class="aside-item flex-column">
+                        <h3><span>影片專區</span></h3>
+                        <a href="#" class="video-pic align-self-center">
+                            <img class="img-fluid" src="./images/Snipaste_2021-07-10_10-17-56.png" alt="">
+                        </a>
+                        <p class="type pt-1 align-self-center">影音</p>
+                        <a href="#" class="aside-item-video-txt text-dark py-3">
+                            <p>
+                                【商周圓桌趨勢論壇】台灣為何要為新製造奮力一擊？ 轉型新製造，如何改變人心？
+                            </p>
+                        </a>
+                        <div class="circle"><img src="./images/Snipaste_2021-07-10_10-18-42-2.png" alt=""></div>
+                    </div>
+
+                    <div class="aside-item d-flex">
+                        <h3><span>當期雜誌</span></h3>
+
+                        <div class="item-content">
+                            <div class="top">
+                                <a href="#" class="pic align-self-center">
+                                    <img class="img-fluid" src="./images/ef866d82-0afe-2dd9-72ea-e6ba3a7c1537_310.jpeg"
+                                        alt="">
+                                </a>
+                                <p class="date border-bottom py-2 mb-2 align-self-center d-none d-lg-block">商業周刊第 1755 期
+                                    2021.07.01</p>
+                            </div>
+                            <div class="aside-item-txt ">
+                                <p class="date border-bottom py-2 mb-2 align-self-center d-block d-lg-none">商業周刊第 1755 期
+                                    2021.07.01</p>
+                                <a href="#" class="small-title text-dark py-3 align-self-center">
+                                    <h4>內捲中國關鍵報告</h4>
+                                </a>
+                                <p>【美中疫後交鋒．首部曲】 中共百年、歐美圍堵，看懂中國經濟「往內轉」4大危機</p>
+                                <p>直擊》「世界超市」義烏出口轉內銷，中國經濟變局縮影</p>
+                                <p>從流行語「躺平」、紙龍、台商拚減碳、螞蟻森林</p>
+                                <p>全面解讀下個十年走向</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="aside-item">
+                        <h3><span>新書出版</span></h3>
+                        <div class="item-content">
+                            <a href="#" class="book-pic border-bottom pb-2">
+                                <img class="img-fluid border-bottom" src="./images/Snipaste_2021-07-10_10-40-46-3.png"
+                                    alt="">
+                            </a>
+                            <div class="small-content">
+                                <a href="#" class="aside-item-txt text-dark py-3">
+                                    <p>
+                                        魅力領導學：CEO魅力教練解析領導者的35個形象策略題
+                                    </p>
+                                </a>
+                                <p class="author pt-2">陳麗卿</p>
+                            </div>
+                        </div>
+                        <div class="circle"><img src="./images/Snipaste_2021-07-10_10-18-42-2.png" alt=""></div>
+                    </div>
+
+                    <div class="aside-item">
+                        <h3><span>良醫健康+</span></h3>
+                        <div class="item-content">
+                            <a href="#" class="health-pic border-bottom pb-2 align-self-center">
+                                <img class="img-fluid" src="./images/Snipaste_2021-07-10_10-47-18-4.png" alt="">
+                            </a>
+                            <a href="#" class="aside-item-txt text-dark py-3 align-self-start">
+                                <p>
+                                    健康新知享不完，點擊加入
+                                </p>
+                            </a>
+                        </div>
+                        <div class="circle"><img src="./images/Snipaste_2021-07-10_10-18-42-2.png" alt=""></div>
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+
+                <div class="footer-logo">
+                    <img src="./images/logo-white.png" alt="">
+                </div>
+
+                <div class="footer-content">
+                    <div class="link d-none d-lg-flex">
+                        <div class="item">
+                            <h4>內容分類</h4>
+                            <a href="#">
+                                <p>焦點</p>
+                            </a>
+                            <a href="#">
+                                <p>國際</p>
+                            </a>
+                            <a href="#">
+                                <p>財經</p>
+                            </a>
+                            <a href="#">
+                                <p>管理</p>
+                            </a>
+                            <a href="#">
+                                <p>職場</p>
+                            </a>
+                            <a href="#">
+                                <p>共好ESG</p>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <h4>特色頻道</h4>
+                            <a href="#">
+                                <p>名家專欄</p>
+                            </a>
+                            <a href="#">
+                                <p>特別企劃</p>
+                            </a>
+                            <a href="#">
+                                <p>影音</p>
+                            </a>
+                            <a href="#">
+                                <p>商周財富網</p>
+                            </a>
+                            <a href="#">
+                                <p>良醫健康網</p>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <h4>商周知識庫</h4>
+                            <a href="#">
+                                <p>商周封面</p>
+                            </a>
+                            <a href="#">
+                                <p>兩岸國際</p>
+                            </a>
+                            <a href="#">
+                                <p>人物報導</p>
+                            </a>
+                            <a href="#">
+                                <p>職場管理'</p>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <h4>多元服務</h4>
+                            <a href="#">
+                                <p>訂閱商周</p>
+                            </a>
+                            <a href="#">
+                                <p>客服中心</p>
+                            </a>
+                            <a href="#">
+                                <p>常見問答</p>
+                            </a>
+                            <a href="#">
+                                <p>活動總覽</p>
+                            </a>
+                            <a href="#">
+                                <p>商周Store</p>
+                            </a>
+                            <a href="#">
+                                <p>會員中心</p>
+                            </a>
+                            <a href="#">
+                                <p>序號兌換</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="information-contact">
+                        <div class="cooperation mb-3 d-none d-lg-flex">
+                            <div class="">
+                                <a href="#">
+                                    <img src="./images/footer/logo-white-small.png" alt="">
+                                </a>
+                            </div>
+                            <div class="">
+                                <a href="#">
+                                    <img src="./images/footer/smart-white.png" alt="">
+                                </a>
+                            </div>
+                            <div class="">
+                                <a href="#">
+                                    <img src="./images/footer/health-white.png" alt="">
+                                </a>
+                            </div>
+                            <div class="">
+                                <a href="#">
+                                    <img src="./images/footer/alive-white.png" alt="">
+                                </a>
+                            </div>
+                            <div class="">
+                                <a href="#">
+                                    <img src="./images/footer/bwe-white.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="social-network mb-5">
+                            <div class="pics">
+                                <div class="pic">
+                                    <a href="#">
+                                        <img src="./images/footer/footer-fb-normal.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="pic">
+                                    <a href="#">
+                                        <img src="./images/footer/footer-line-normal.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="pic">
+                                    <a href="#">
+                                        <img src="./images/footer/footer-yt-normal.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="pic">
+                                    <a href="#">
+                                        <img src="./images/footer/footer-web-normal.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="pic ig">
+                                    <a href="#">
+                                        <img src="./images/footer/footer-instagram.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="pic web">
+                                    <a href="#">
+                                        <img src="./images/footer/footer-telegram.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="app-download d-none d-lg-flex">
+                                <a href="#">
+                                    <p>下載App抽好禮</p>
+                                </a>
+                            </div>
+                            <div class="follow d-none d-lg-flex">
+                                <a href="#">
+                                    <p>訂閱電子報</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="follow-area d-lg-none d-flex">
+                            <div class="app-download">
+                                <a href="#">
+                                    <p>下載App抽好禮</p>
+                                </a>
+                            </div>
+                            <div class="follow">
+                                <a href="#">
+                                    <p>訂閱電子報</p>
+                                </a>
+                            </div>
+                        </div>
+
+
+                        <div class="phone">
+                            <div class="service">
+                                <h4>客戶服務專線</h4>
+                                <p>(02) 2505-6789</p>
+                                <p>分機 5720 - 5723</p>
+                            </div>
+                            <div class="tel">
+                                <h4>傳真</h4>
+                                <p>(02) 2503-6989</p>
+                            </div>
+                            <div class="service-time d-none d-lg-block">
+                                <h4>服務時間</h4>
+                                <p>週一至週五08:30~18:00 (例假日除外)</p>
+                            </div>
+                        </div>
+
+                        <div class="service-time d-block d-lg-none">
+                            <h4>服務時間</h4>
+                            <p>週一至週五08:30~18:00 (例假日除外)</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="copyright">
+                    <p class="txt"> &copy2019 Business Weekly a division of Cite Publishing Ltd All Rights Reserved.</p>
+                    <div>
+                        <a href="#">
+                            <p>關於商周集團</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <p>公告</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <p>文章影音授權</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <p>廣告合作</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <p>常見問題</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <p>隱私權聲明</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <p>網站導覽</p>
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </footer>
 
 
 
 
 
-
-
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-            integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-            integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
