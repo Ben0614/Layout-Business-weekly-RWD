@@ -66,6 +66,9 @@ header{
     height: 100%;
 }
 
+.login{
+    align-items: center;
+}
 .login a{
     color: #cd0505;
 }
@@ -459,7 +462,7 @@ nav ul li a{
      width: calc(50% - 15px);
  }
 
-.main .category .more span{
+.main .category .more{
      color: #cd0505;
      font-size: 14px;
  }
@@ -495,7 +498,7 @@ nav ul li a{
  }
 
  .Sponsor{
-     width: 60px;
+     width: 67px;
      border:1px solid #ccc;
  }
 
