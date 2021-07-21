@@ -9,6 +9,7 @@
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="./fontawesome-free-5.15.3-web/css/all.css">
     <link rel="stylesheet" href="index.css">
     <title>homework-RWD</title>
 </head>
@@ -17,8 +18,25 @@
     <header>
         <div class="container">
             <div class="row py-2 align-items-center justify-content-between">
-
-                <div class="hum d-bloc d-lg-none"><a href="#"><img src="./images/m-menu-normal.png" alt=""></a></div>
+                <!-- 手機板漢堡選單 -->
+                <div class="hum d-block d-lg-none">
+                    <a href="#"><img src="./images/m-menu-normal.png" alt="">
+                    </a>
+                    <ul class="hum-list d-lg-none">
+                        <li><a href="#">焦點 <span><i class="fas fa-caret-down"></i></span></a></li>
+                        <li><a href="#">國際 <span><i class="fas fa-caret-down"></i></span></a></li>
+                        <li><a href="#">財經 <span><i class="fas fa-caret-down"></i></span></a></li>
+                        <li><a href="#">管理 <span><i class="fas fa-caret-down"></i></span></a></li>
+                        <li><a href="#">職場 <span><i class="fas fa-caret-down"></i></span></a></li>
+                        <li><a href="#">共好ESG <span><i class="fas fa-caret-down"></i></span></a></li>
+                        <li><a href="#">專題 <span><i class="fas fa-caret-down"></i></span></a></li>
+                        <li><a href="#">數位閱讀 <span><i class="fas fa-caret-down"></i></span></a></li>
+                        <li><a href="#">商周Store <span><i class="fas fa-caret-down"></i></span></a></li>
+                        <li><a href="#">商周CEO學院 <span><i class="fas fa-caret-down"></i></span>
+                            </a></li>
+                        <li><a href="#">服務<span><i class="fas fa-caret-down"></i></span></a></li>
+                    </ul>
+                </div>
 
                 <div class="gold-logo-App d-flex align-items-end ">
                     <div class="gold-logo d-none d-lg-block">
@@ -63,17 +81,147 @@
         <div class="container">
             <div class="row">
                 <ul class="d-flex justify-content-between w-100 text-center">
-                    <li><a href="#">焦點</a></li>
-                    <li><a href="#">國際</a></li>
-                    <li><a href="#">財經</a></li>
-                    <li><a href="#">管理</a></li>
-                    <li><a href="#">職場</a></li>
-                    <li><a href="#">共好ESG</a></li>
-                    <li><a href="#">專題</a></li>
-                    <li><a href="#">數位閱讀</a></li>
-                    <li><a href="#">商周Store</a></li>
-                    <li><a href="#">CEO學院</a></li>
-                    <li><a href="#">服務</a></li>
+                    <li>
+                        <a href="#">焦點</a>
+                        <!-- 子項目 -->
+                        <ul class="subproject">
+                            <li class="title"><a href="#">焦點首頁</a></li>
+                            <li><a href="#">時事分析</a></li>
+                            <li><a href="#">封面故事</a></li>
+                            <li><a href="#">今日最新</a></li>
+                            <li><a href="#">大家都在看</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">國際</a>
+                        <ul class="subproject">
+                            <li class="title"><a href="#">國際首頁</a></li>
+                            <li><a href="#">全球話題</a></li>
+                            <li><a href="#">趨勢中國</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">財經</a>
+                        <ul class="subproject">
+                            <li class="title">
+                                <a href="#">財經首頁</a>
+                            </li>
+                            <div class="content d-lg-flex">
+                                <div class="link">
+                                    <li><a href="#">產業動態</a></li>
+                                    <li><a href="#">商業趨勢</a></li>
+                                    <li><a href="#">焦點人物</a></li>
+                                    <li><a href="#">投資理財
+                                        </a></li>
+                                    <li><a href="#">地產風雲</a></li>
+                                    <li><a href="#">新冠肺炎追蹤</a></li>
+                                </div>
+                                <div class="other-web">
+                                    <li>相關網站</li>
+                                    <li><a href="#">商周財富網</a></li>
+                                </div>
+                            </div>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">管理</a>
+                        <ul class="subproject">
+                            <li class="title"><a href="#">管理首頁</a></li>
+                            <li><a href="#">創新策略</a></li>
+                            <li><a href="#">數位轉型</a></li>
+                            <li><a href="#">行銷密技</a></li>
+                            <li><a href="#">領導馭人</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">職場</a>
+                        <ul class="subproject">
+                            <li class="title"><a href="#">職場首頁</a></li>
+                            <li><a href="#">職場修練</a></li>
+                            <li><a href="#">創業心法</a></li>
+                            <li><a href="#">英文學習</a></li>
+                            <li><a href="#">教育趨勢</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">共好ESG</a>
+                        <ul class="subproject">
+                            <div class="title">
+                                <li><a href="#">ESG 專區</a></li>
+                                <li><a href="#">生活首頁</a></li>
+                            </div>
+                            <div class="content d-lg-flex">
+                                <div class="link">
+                                    <li><a href="#">中場幸福學
+                                        </a></li>
+                                    <li><a href="#">養生保健</a></li>
+                                    <li><a href="#">時尚藝文</a></li>
+                                    <li><a href="#">美食</a></li>
+                                    <li><a href="#">旅遊</a></li>
+                                </div>
+                                <div class="other-web">
+                                    <li>相關網站
+                                    </li>
+                                    <li><a href="#">良醫健康網</a></li>
+                                    <li><a href="#">alive</a></li>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">專題</a>
+                        <ul class="subproject">
+                            <li><a href="#">名家專欄</a></li>
+                            <li><a href="#">特別企劃</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">數位閱讀</a>
+                        <ul class="subproject">
+                            <li><a href="#">商周知識庫</a></li>
+                            <li><a href="#">商周共學圈</a></li>
+                            <li><a href="#">商周陪你讀</a></li>
+                            <li><a href="#">百大顧問團</a></li>
+                            <li><a href="#">關鍵100天 CEO作戰室</a></li>
+                            <li><a href="#">聲音商學院 </a></li>
+                            <li><a href="#">商周STUDIO</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">商周Store</a>
+                        <ul class="subproject">
+                            <li><a href="#">週年慶優惠</a></li>
+                            <li><a href="#">紙本雜誌</a></li>
+                            <li><a href="#">電子雜誌</a></li>
+                            <li><a href="#">數位訂閱</a></li>
+                            <li><a href="#">暢銷圖書</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">CEO學院</a>
+                        <ul class="subproject">
+                            <li><a href="#">CEO領導學程</a></li>
+                            <li><a href="#">魅力領導學</a></li>
+                            <li><a href="#">金惟純 活學工作坊</a></li>
+                            <li><a href="#">職場學</a></li>
+                            <li><a href="#">青少年 駐足思考表達</a></li>
+                            <li><a href="#">圓桌趨勢論壇</a></li>
+                            <li><a href="#">線上好好學</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">服務</a>
+                        <ul class="subproject">
+                            <li><a href="#">會員中心</a></li>
+                            <li><a href="#">訂閱商周</a></li>
+                            <li><a href="#">客服中心</a></li>
+                            <li><a href="#">常見問題</a></li>
+                            <li><a href="#">活動總覽</a></li>
+                            <li><a href="#">加入我們</a></li>
+                            <li><a href="#">序號兌換</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -90,7 +238,7 @@
                     </path>
                 </g>
             </svg>
-            <p>【商業周刊 ╴商品/贈品暫停出貨公告】</p>
+            <p><a href="#">【商業周刊 ╴商品/贈品暫停出貨公告】</a></p>
         </div>
     </div>
 
