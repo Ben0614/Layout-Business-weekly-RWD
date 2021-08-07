@@ -176,11 +176,6 @@ nav .subproject li{
     color: #000;
 }
 
-.banner{
-    position: relative;
-    z-index:-1;
-}
-
 .new
 {
     position: relative;
@@ -256,6 +251,7 @@ nav .subproject li{
     font-weight: 500;
     color: #000;
 }
+
 .new .item .text p {
     margin-bottom: 5px;
 }
