@@ -37,9 +37,7 @@ header{
     width: 40px;
     height: 40px;
 }
-.hum:hover .hum-list{
-   display:block;
-}
+
 /* 手機板漢堡選單條 */
 .hum-list{
     position: absolute;
