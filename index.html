@@ -22,7 +22,9 @@
                     <!-- 漢堡選單圖片 -->
                     <a href="javascript:void(0)"><img src="./images/m-menu-normal.png" alt="">
                     </a>
-                    <!-- 漢堡選單list -->
+                </div>
+                
+                <!-- 漢堡選單list -->
                     <ul class="hum-list d-lg-none">
                         <li><a href="javascript:void(0)">焦點 <span><i class="fas fa-caret-down"></i></span></a></li>
                         <li><a href="javascript:void(0)">國際 <span><i class="fas fa-caret-down"></i></span></a></li>
@@ -37,7 +39,6 @@
                             </a></li>
                         <li><a href="javascript:void(0)">服務<span><i class="fas fa-caret-down"></i></span></a></li>
                     </ul>
-                </div>
 
                 <!-- 黃色logo和下載APP抽好禮 -->
                 <div class="gold-logo-App d-flex align-items-end ">
@@ -1062,7 +1063,8 @@
 
     <script>
         $(function () {
-            $('.hum a').click(function () {
+            $('.hum').click(function (e) {
+                e.stopPropagation();
                 $('.hum-list').stop().slideToggle();
             })
         })
